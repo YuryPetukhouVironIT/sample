@@ -1,6 +1,6 @@
-package com.cephx.def.controller.webapi;
+package com.company.def.controller.webapi;
 
-import com.cephx.def.service.webapi.PartnerPatientService;
+import com.company.def.service.webapi.PartnerPatientService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

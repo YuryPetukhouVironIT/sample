@@ -1,8 +1,8 @@
-package com.cephx.def.model.airways;
+package com.company.def.model.airways;
 
-import com.cephx.def.funcclass;
-import com.cephx.def.service.S3Service;
-import com.cephx.def.service.db.PatientService;
+import com.company.def.funcclass;
+import com.company.def.service.S3Service;
+import com.company.def.service.db.PatientService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
@@ -27,7 +27,7 @@ public class AirwaysReportDataManager {
     public AirwaysReportDataManager(final long patientId, final S3Service s3Service) {
         this.s3Service = s3Service;
         this.stlPath = PatientService.getStlPath(patientId);
-        File directory = new File(funcclass.tempPatientImagesDicomPath + "/dicomDir"+patientId);
+        File directory = new File(funcclass.tempPatientImagesDicomPath + "/dicomDir" + patientId);
         if(!directory.exists()) {
             directory.mkdirs();
         }

@@ -1,4 +1,4 @@
-package com.cephx.def.model.chargebee;
+package com.company.def.model.chargebee;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.hibernate.annotations.Type;

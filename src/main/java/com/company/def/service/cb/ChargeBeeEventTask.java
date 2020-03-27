@@ -1,8 +1,8 @@
-package com.cephx.def.service.cb;
+package com.company.def.service.cb;
 
-import com.cephx.def.SlackClient;
-import com.cephx.def.model.chargebee.ChargeBeeEventInfo;
-import com.cephx.def.repository.ChargeBeeEventInfoRepository;
+import com.company.def.SlackClient;
+import com.company.def.model.chargebee.ChargeBeeEventInfo;
+import com.company.def.repository.ChargeBeeEventInfoRepository;
 import com.chargebee.models.Event;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

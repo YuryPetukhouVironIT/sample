@@ -1,11 +1,11 @@
-package com.cephx.def.service;
+package com.company.def.task;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.model.PutObjectResult;
-import com.cephx.def.BasicDoc;
-import com.cephx.def.DBconnection;
-import com.cephx.def.SlackClient;
-import com.cephx.def.funcclass;
+import com.company.def.BasicDoc;
+import com.company.def.DBconnection;
+import com.company.def.SlackClient;
+import com.company.def.funcclass;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

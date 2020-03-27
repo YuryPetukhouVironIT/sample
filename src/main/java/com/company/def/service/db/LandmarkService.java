@@ -1,7 +1,7 @@
-package com.cephx.def.service.db;
+package com.company.def.service.db;
 
-import com.cephx.def.*;
-import com.cephx.def.util.string.StringUtility;
+import com.company.def.*;
+import com.company.def.util.string.StringUtility;
 import com.google.gson.internal.LinkedHashTreeMap;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

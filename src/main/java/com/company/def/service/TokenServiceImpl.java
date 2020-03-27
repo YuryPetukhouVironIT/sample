@@ -1,14 +1,14 @@
-package com.cephx.def.service;
+package com.company.def.service;
 
-import com.cephx.def.Base64;
-import com.cephx.def.BasicDoc;
-import com.cephx.def.DBconnection;
-import com.cephx.def.funcclass;
-import com.cephx.def.model.StlViewerToken;
-import com.cephx.def.repository.StlViewerTokenRepository;
-import com.cephx.def.repository.WpTokenRepository;
-import com.cephx.def.service.cb.ChargeBeeCustomerService;
-import com.cephx.def.util.string.StringUtility;
+import com.company.def.Base64;
+import com.company.def.BasicDoc;
+import com.company.def.DBconnection;
+import com.company.def.funcclass;
+import com.company.def.model.StlViewerToken;
+import com.company.def.repository.StlViewerTokenRepository;
+import com.company.def.repository.WpTokenRepository;
+import com.company.def.service.cb.ChargeBeeCustomerService;
+import com.company.def.util.string.StringUtility;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.utils.URIBuilder;

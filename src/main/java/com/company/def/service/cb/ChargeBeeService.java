@@ -1,4 +1,4 @@
-package com.cephx.def.service.cb;
+package com.company.def.service.cb;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package com.cephx.def.service.db;
+package com.company.def.service.db;
 
-import com.cephx.def.funcclass;
-import com.cephx.def.model.DoctorLogin;
-import com.cephx.def.repository.DoctorLoginRepository;
+import com.company.def.funcclass;
+import com.company.def.model.DoctorLogin;
+import com.company.def.repository.DoctorLoginRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

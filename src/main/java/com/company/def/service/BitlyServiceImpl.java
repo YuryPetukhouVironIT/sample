@@ -1,7 +1,7 @@
-package com.cephx.def.service;
+package com.company.def.service;
 
-import com.cephx.def.funcclass;
-import com.cephx.def.service.db.PatientService;
+import com.company.def.funcclass;
+import com.company.def.service.db.PatientService;
 import net.swisstech.bitly.BitlyClient;
 import net.swisstech.bitly.model.Response;
 import net.swisstech.bitly.model.v3.ShortenResponse;

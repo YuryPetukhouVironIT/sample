@@ -1,6 +1,6 @@
-package com.cephx.def.service.archive;
+package com.company.def.service.archive;
 
-import com.cephx.def.util.file.FileUtility;
+import com.company.def.util.file.FileUtility;
 
 import java.io.File;
 import java.io.FileInputStream;

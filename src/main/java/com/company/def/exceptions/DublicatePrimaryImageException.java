@@ -1,4 +1,4 @@
-package com.cephx.def.exceptions;
+package com.company.def.exceptions;
 
 public class DublicatePrimaryImageException extends RuntimeException {
     private static final long serialVersionUID = -6009604638922919798L;

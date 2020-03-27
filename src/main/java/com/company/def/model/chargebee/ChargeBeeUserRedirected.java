@@ -1,4 +1,4 @@
-package com.cephx.def.model.chargebee;
+package com.company.def.model.chargebee;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

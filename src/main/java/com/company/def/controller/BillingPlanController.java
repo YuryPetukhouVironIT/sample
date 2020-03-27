@@ -1,15 +1,15 @@
-package com.cephx.def.controller;
+package com.company.def.controller;
 
-import com.cephx.def.dto.BillingPlanFeatureDTO;
-import com.cephx.def.funcclass;
-import com.cephx.def.model.billing.BillingPlan;
-import com.cephx.def.model.billing.CbBillingPlan;
-import com.cephx.def.service.AuthenticationService;
-import com.cephx.def.service.billing.BillingPlanService;
-import com.cephx.def.service.billing.FeatureService;
-import com.cephx.def.service.db.DoctorService;
-import com.cephx.def.service.db.PatientService;
-import com.cephx.def.servlets.admin.AdminConsts;
+import com.company.def.dto.BillingPlanFeatureDTO;
+import com.company.def.funcclass;
+import com.company.def.model.billing.BillingPlan;
+import com.company.def.model.billing.CbBillingPlan;
+import com.company.def.service.AuthenticationService;
+import com.company.def.service.billing.BillingPlanService;
+import com.company.def.service.billing.FeatureService;
+import com.company.def.service.db.DoctorService;
+import com.company.def.service.db.PatientService;
+import com.company.def.servlets.admin.AdminConsts;
 import org.apache.http.auth.AuthenticationException;
 import org.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;

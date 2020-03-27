@@ -1,9 +1,9 @@
-package com.cephx.def.service;
+package com.company.def.service;
 
 import com.Ostermiller.util.Base64;
-import com.cephx.def.funcclass;
-import com.cephx.def.service.db.DicomTaskService;
-import com.cephx.def.service.db.PatientService;
+import com.company.def.funcclass;
+import com.company.def.service.db.DicomTaskService;
+import com.company.def.service.db.PatientService;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

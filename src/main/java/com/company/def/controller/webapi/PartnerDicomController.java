@@ -1,9 +1,9 @@
-package com.cephx.def.controller.webapi;
+package com.company.def.controller.webapi;
 
-import com.cephx.def.service.StlService;
-import com.cephx.def.service.db.PatientService;
-import com.cephx.def.service.webapi.PartnerDicomService;
-import com.cephx.def.service.webapi.PartnerPatientService;
+import com.company.def.service.StlService;
+import com.company.def.service.db.PatientService;
+import com.company.def.service.webapi.PartnerDicomService;
+import com.company.def.service.webapi.PartnerPatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

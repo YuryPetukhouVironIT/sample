@@ -1,9 +1,9 @@
-package com.cephx.def.service.db;
+package com.company.def.service.db;
 
-import com.cephx.def.CPatient;
-import com.cephx.def.enums.PictureType;
-import com.cephx.def.model.*;
-import com.cephx.def.repository.*;
+import com.company.def.CPatient;
+import com.company.def.enums.PictureType;
+import com.company.def.model.*;
+import com.company.def.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

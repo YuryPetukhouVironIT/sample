@@ -1,6 +1,6 @@
-package com.cephx.def.repository.billing;
+package com.company.def.repository.billing;
 
-import com.cephx.def.model.billing.CbBillingPlan;
+import com.company.def.model.billing.CbBillingPlan;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

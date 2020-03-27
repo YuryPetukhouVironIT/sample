@@ -1,4 +1,4 @@
-package com.cephx.def.dto;
+package com.company.def.dto;
 
 import java.util.List;
 

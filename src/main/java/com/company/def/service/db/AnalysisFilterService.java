@@ -1,6 +1,6 @@
-package com.cephx.def.service.db;
+package com.company.def.service.db;
 
-import com.cephx.def.DBconnection;
+import com.company.def.DBconnection;
 
 public class AnalysisFilterService {
     private static DBconnection connection = DBconnection.GetDBconnection();

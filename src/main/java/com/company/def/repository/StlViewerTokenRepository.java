@@ -1,6 +1,6 @@
-package com.cephx.def.repository;
+package com.company.def.repository;
 
-import com.cephx.def.model.StlViewerToken;
+import com.company.def.model.StlViewerToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Date;

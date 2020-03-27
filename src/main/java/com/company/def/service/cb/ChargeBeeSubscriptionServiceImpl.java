@@ -1,14 +1,14 @@
-package com.cephx.def.service.cb;
+package com.company.def.service.cb;
 
-import com.cephx.def.DBconnection;
-import com.cephx.def.ZohoCrmClient;
-import com.cephx.def.exceptions.NoDoctorWithCbIdException;
-import com.cephx.def.funcclass;
-import com.cephx.def.model.chargebee.ChargeBeeDoctorId;
-import com.cephx.def.model.chargebee.ChargeBeeSubscriptionId;
-import com.cephx.def.repository.ChargeBeeDoctorIdRepository;
-import com.cephx.def.repository.ChargeBeeSubscriptionIdRepository;
-import com.cephx.def.service.db.DoctorService;
+import com.company.def.DBconnection;
+import com.company.def.ZohoCrmClient;
+import com.company.def.exceptions.NoDoctorWithCbIdException;
+import com.company.def.funcclass;
+import com.company.def.model.chargebee.ChargeBeeDoctorId;
+import com.company.def.model.chargebee.ChargeBeeSubscriptionId;
+import com.company.def.repository.ChargeBeeDoctorIdRepository;
+import com.company.def.repository.ChargeBeeSubscriptionIdRepository;
+import com.company.def.service.db.DoctorService;
 import com.chargebee.Environment;
 import com.chargebee.ListResult;
 import com.chargebee.exceptions.InvalidRequestException;

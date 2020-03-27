@@ -1,8 +1,8 @@
-package com.cephx.def.service.db;
+package com.company.def.service.db;
 
-import com.cephx.def.DBconnection;
-import com.cephx.def.repository.PartnerRepository;
-import com.cephx.def.servlets.admin.Partner;
+import com.company.def.DBconnection;
+import com.company.def.repository.PartnerRepository;
+import com.company.def.servlets.admin.Partner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

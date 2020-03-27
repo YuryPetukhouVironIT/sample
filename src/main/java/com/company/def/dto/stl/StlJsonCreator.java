@@ -1,7 +1,7 @@
-package com.cephx.def.dto.stl;
+package com.company.def.dto.stl;
 
-import com.cephx.def.funcclass;
-import com.cephx.def.service.S3Service;
+import com.company.def.funcclass;
+import com.company.def.service.S3Service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.logging.log4j.LogManager;
@@ -21,6 +21,8 @@ import java.util.zip.ZipFile;
 public class StlJsonCreator {
 
     private static final Logger logger = LogManager.getLogger(StlJsonCreator.class);
+    private static final String DEFAULT_SETTINGS_FILE_NAME = "stlViewerDefaultSettings.json"
+    private static final String STL_VIEWER_PREFERENCES_FILE_NAME = "stlViewerPreferences.json"
     private final Long patientId;
     private final String patientFirstName;
     private final String patientLastName;
@@ -92,7 +94,6 @@ public class StlJsonCreator {
     private List<StlToothGroup> getDeafaultOtherTeethGroup() {
         final List<StlToothGroup> teethGroups = new ArrayList<>();
         final List<StlFile> otherTeethFiles = getOtherTeethFiles();
-
         teethGroups.add(new StlToothGroup("other", otherTeethFiles));
         return teethGroups;
     }
@@ -178,13 +179,13 @@ public class StlJsonCreator {
 
     private StlDefaultSettings getDefaultSettings() throws IOException {
         final ObjectMapper objectMapper = new ObjectMapper();
-        final StlDefaultSettings defaultSettings = objectMapper.readValue(new File(funcclass.innerLogDir + "stlViewerDefaultSettings.json"), StlDefaultSettings.class);
+        final StlDefaultSettings defaultSettings = objectMapper.readValue(new File(funcclass.innerLogDir + DEFAULT_SETTINGS_FILE_NAME), StlDefaultSettings.class);
         return defaultSettings;
     }
 
     private StlPreferences initDefaultStlPreferences() {
         try {
-            return new ObjectMapper().readValue(new File(funcclass.innerLogDir + "stlViewerPreferences.json"), StlPreferences.class);
+            return new ObjectMapper().readValue(new File(funcclass.innerLogDir + STL_VIEWER_PREFERENCES_FILE_NAME, StlPreferences.class);
         } catch (IOException e) {
             logger.error(e);
             return new StlPreferences();

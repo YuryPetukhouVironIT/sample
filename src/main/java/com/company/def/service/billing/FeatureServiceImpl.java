@@ -1,7 +1,7 @@
-package com.cephx.def.service.billing;
+package com.company.def.service.billing;
 
-import com.cephx.def.model.billing.Feature;
-import com.cephx.def.repository.billing.FeaturesRepository;
+import com.company.def.model.billing.Feature;
+import com.company.def.repository.billing.FeaturesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

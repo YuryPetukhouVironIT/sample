@@ -1,6 +1,6 @@
-package com.cephx.def.repository;
+package com.company.def.repository;
 
-import com.cephx.def.model.WpToken;
+import com.company.def.model.WpToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

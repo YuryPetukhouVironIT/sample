@@ -1,4 +1,4 @@
-package com.cephx.def.dto.stl;
+package com.company.def.dto.stl;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,8 +1,8 @@
-package com.cephx.def.service.cb;
+package com.company.def.service.cb;
 
-import com.cephx.def.funcclass;
-import com.cephx.def.model.chargebee.ChargeBeeEventInfo;
-import com.cephx.def.repository.ChargeBeeEventInfoRepository;
+import com.company.def.funcclass;
+import com.company.def.model.chargebee.ChargeBeeEventInfo;
+import com.company.def.repository.ChargeBeeEventInfoRepository;
 import com.chargebee.Environment;
 import com.chargebee.ListResult;
 import com.chargebee.models.Event;

@@ -1,8 +1,8 @@
-package com.cephx.def.service.webapi;
+package com.company.def.service.webapi;
 
-import com.cephx.def.exceptions.WebApiException;
-import com.cephx.def.service.AnalysisService;
-import com.cephx.def.service.db.PatientService;
+import com.company.def.exceptions.WebApiException;
+import com.company.def.service.AnalysisService;
+import com.company.def.service.db.PatientService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

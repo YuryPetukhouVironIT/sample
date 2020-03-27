@@ -1,6 +1,6 @@
-package com.cephx.def.service.db;
+package com.company.def.service.db;
 
-import com.cephx.def.funcclass;
+import com.company.def.funcclass;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;

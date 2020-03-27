@@ -1,9 +1,9 @@
-package com.cephx.def.dto;
+package com.company.def.dto;
 
-import com.cephx.def.BasicDoc;
-import com.cephx.def.BasicPatientInfoData;
-import com.cephx.def.enums.DicomType;
-import com.cephx.def.model.DicomTask;
+import com.company.def.BasicDoc;
+import com.company.def.BasicPatientInfoData;
+import com.company.def.enums.DicomType;
+import com.company.def.model.DicomTask;
 
 public class NextDicomTaskDTO {
 

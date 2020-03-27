@@ -1,12 +1,12 @@
-package com.cephx.def.service.db;
+package com.company.def.service.db;
 
-import com.cephx.def.model.IgnoredScaleSnapshot;
-import com.cephx.def.model.ManualScaleCalibrationSnapshot;
-import com.cephx.def.model.Screenshot;
-import com.cephx.def.repository.IgnoredScaleSnapshotRepository;
-import com.cephx.def.repository.ManualScaleCalibrationRepository;
-import com.cephx.def.repository.ScreenshotRepository;
-import com.cephx.def.service.S3Service;
+import com.company.def.model.IgnoredScaleSnapshot;
+import com.company.def.model.ManualScaleCalibrationSnapshot;
+import com.company.def.model.Screenshot;
+import com.company.def.repository.IgnoredScaleSnapshotRepository;
+import com.company.def.repository.ManualScaleCalibrationRepository;
+import com.company.def.repository.ScreenshotRepository;
+import com.company.def.service.S3Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

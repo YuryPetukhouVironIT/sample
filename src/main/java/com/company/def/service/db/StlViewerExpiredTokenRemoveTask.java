@@ -1,7 +1,7 @@
-package com.cephx.def.service.db;
+package com.company.def.service.db;
 
-import com.cephx.def.model.StlViewerToken;
-import com.cephx.def.repository.StlViewerTokenRepository;
+import com.company.def.model.StlViewerToken;
+import com.company.def.repository.StlViewerTokenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;

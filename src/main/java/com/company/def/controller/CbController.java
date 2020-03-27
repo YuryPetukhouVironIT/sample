@@ -1,10 +1,10 @@
-package com.cephx.def.controller;
+package com.company.def.controller;
 
-import com.cephx.def.dto.ChargeBeeRedirectDTO;
-import com.cephx.def.service.AuthenticationService;
-import com.cephx.def.service.cb.ChargeBeeCustomerService;
-import com.cephx.def.service.cb.ChargeBeeService;
-import com.cephx.def.service.db.DoctorService;
+import com.company.def.dto.ChargeBeeRedirectDTO;
+import com.company.def.service.AuthenticationService;
+import com.company.def.service.cb.ChargeBeeCustomerService;
+import com.company.def.service.cb.ChargeBeeService;
+import com.company.def.service.db.DoctorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -45,7 +45,9 @@ public class CbController {
 
     @RequestMapping("/isCbIdExists")
     @ResponseBody
-    public boolean isCbIdExists (@RequestParam final Long doctorId, final HttpServletRequest request, final HttpServletResponse response) throws Exception {
+    public boolean isCbIdExists (@RequestParam final Long doctorId,
+                                 final HttpServletRequest request,
+                                 final HttpServletResponse response) throws Exception {
         if (DoctorService.getDoctorInfoById(doctorId).user.equals(authenticationService.checkApiTokenAuthentication(request, response))) {
             return cbCustomerService.isCbIdExists(doctorId);
         } else {
@@ -56,19 +58,25 @@ public class CbController {
 
     @RequestMapping("/isCbUserRegistered")
     @ResponseBody
-    public boolean isCbUserRegistered (@RequestParam final String cbId, final HttpServletRequest request) throws Exception {
+    public boolean isCbUserRegistered (@RequestParam final String cbId,
+                                       final HttpServletRequest request) throws Exception {
         return cbCustomerService.isCbUserRegistered(cbId, request);
     }
 
     @RequestMapping("/signupRedirect")
     @ResponseBody
-    public ChargeBeeRedirectDTO signpRedirect (@RequestParam(required = false) final String hostedPageId, @RequestParam(required = false) final String subscriptionId, final HttpServletRequest request, final HttpServletResponse response) throws Exception {
+    public ChargeBeeRedirectDTO signpRedirect (@RequestParam(required = false) final String hostedPageId,
+                                               @RequestParam(required = false) final String subscriptionId,
+                                               final HttpServletRequest request,
+                                               final HttpServletResponse response) throws Exception {
         return cbCustomerService.cbRedirect(hostedPageId, subscriptionId, request, response);
     }
 
     @RequestMapping("/upgradeSubscriptionRedirect")
     @ResponseBody
-    public ChargeBeeRedirectDTO upgradeSubscriptionRedirect (@RequestParam final Integer doctorId, final HttpServletRequest request, final HttpServletResponse response) throws Exception {
+    public ChargeBeeRedirectDTO upgradeSubscriptionRedirect (@RequestParam final Integer doctorId,
+                                                             final HttpServletRequest request,
+                                                             final HttpServletResponse response) throws Exception {
         return cbCustomerService.upgradeSubscriptionRedirect(doctorId, request, response);
     }
 

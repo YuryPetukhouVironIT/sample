@@ -1,6 +1,6 @@
-package com.cephx.def.controller;
+package com.company.def.controller;
 
-import com.cephx.def.service.TokenService;
+import com.company.def.service.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +24,8 @@ public class TokenController {
     }
 
     @RequestMapping("/confirmRegistration")
-    public void confirmRegistration(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
+    public void confirmRegistration(final HttpServletRequest request,
+                                    final HttpServletResponse response) throws Exception {
         response.sendRedirect(tokenService.registerDoctor(request.getRequestURL().toString() + "?" + request.getQueryString()));
     }
 

@@ -1,13 +1,13 @@
-package com.cephx.def.service.db;
+package com.company.def.service.db;
 
 import com.amazonaws.services.s3.model.CannedAccessControlList;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectRequest;
-import com.cephx.def.DBconnection;
-import com.cephx.def.funcclass;
-import com.cephx.def.struct.struct.PictureEntry;
-import com.cephx.def.util.date.DateUtility;
-import com.cephx.def.util.string.RandomString;
+import com.company.def.DBconnection;
+import com.company.def.funcclass;
+import com.company.def.struct.struct.PictureEntry;
+import com.company.def.util.date.DateUtility;
+import com.company.def.util.string.RandomString;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,4 +1,4 @@
-package com.cephx.def.service;
+package com.company.def.service;
 
 public interface BitlyService {
 

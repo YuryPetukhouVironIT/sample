@@ -1,15 +1,15 @@
-package com.cephx.def.service.billing;
+package com.company.def.service.billing;
 
-import com.cephx.def.DBconnection;
-import com.cephx.def.dto.BillingPlanFeatureDTO;
-import com.cephx.def.model.billing.BillingPlan;
-import com.cephx.def.model.billing.CbBillingPlan;
-import com.cephx.def.model.billing.Feature;
-import com.cephx.def.repository.billing.BillingPlanRepository;
-import com.cephx.def.repository.billing.CbBillingPlanRepository;
-import com.cephx.def.repository.billing.FeaturesRepository;
-import com.cephx.def.service.cb.ChargeBeeService;
-import com.cephx.def.service.db.DoctorService;
+import com.company.def.DBconnection;
+import com.company.def.dto.BillingPlanFeatureDTO;
+import com.company.def.model.billing.BillingPlan;
+import com.company.def.model.billing.CbBillingPlan;
+import com.company.def.model.billing.Feature;
+import com.company.def.repository.billing.BillingPlanRepository;
+import com.company.def.repository.billing.CbBillingPlanRepository;
+import com.company.def.repository.billing.FeaturesRepository;
+import com.company.def.service.cb.ChargeBeeService;
+import com.company.def.service.db.DoctorService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

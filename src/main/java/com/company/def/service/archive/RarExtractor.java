@@ -1,6 +1,6 @@
-package com.cephx.def.service.archive;
+package com.company.def.service.archive;
 
-import com.cephx.def.funcclass;
+import com.company.def.funcclass;
 
 import java.io.BufferedReader;
 import java.io.File;

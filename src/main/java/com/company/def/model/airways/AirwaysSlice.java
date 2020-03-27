@@ -1,4 +1,4 @@
-package com.cephx.def.model.airways;
+package com.company.def.model.airways;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -16,7 +16,7 @@ public class AirwaysSlice {
         return area;
     }
 
-    public void setArea(double area) {
+    public void setArea(final double area) {
         this.area = area;
     }
 
@@ -25,7 +25,7 @@ public class AirwaysSlice {
         return apDiameter;
     }
 
-    public void setApDiameter(double apDiameter) {
+    public void setApDiameter(final double apDiameter) {
         this.apDiameter = apDiameter;
     }
 
@@ -34,7 +34,7 @@ public class AirwaysSlice {
         return rlDiameter;
     }
 
-    public void setRlDiameter(double rlDiameter) {
+    public void setRlDiameter(final double rlDiameter) {
         this.rlDiameter = rlDiameter;
     }
 
@@ -43,7 +43,7 @@ public class AirwaysSlice {
         return slicePosition;
     }
 
-    public void setSlicePosition(double slicePosition) {
+    public void setSlicePosition(final double slicePosition) {
         this.slicePosition = slicePosition;
     }
 }

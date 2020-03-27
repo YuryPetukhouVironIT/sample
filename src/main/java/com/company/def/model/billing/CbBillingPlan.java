@@ -1,4 +1,4 @@
-package com.cephx.def.model.billing;
+package com.company.def.model.billing;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,16 +14,16 @@ public class CbBillingPlan {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "name")
     private String name;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public CbBillingPlan setId(int id) {
+    public CbBillingPlan setId(final Long id) {
         this.id = id;
         return this;
     }
@@ -32,7 +32,7 @@ public class CbBillingPlan {
         return name;
     }
 
-    public CbBillingPlan setName(String name) {
+    public CbBillingPlan setName(final String name) {
         this.name = name;
         return this;
     }

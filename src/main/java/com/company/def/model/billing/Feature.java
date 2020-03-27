@@ -1,4 +1,4 @@
-package com.cephx.def.model.billing;
+package com.company.def.model.billing;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -21,7 +21,7 @@ public class Feature {
 
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
 
     @Column(name = "name")
     private String name;
@@ -29,11 +29,11 @@ public class Feature {
     public Feature() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(final int id) {
+    public void setId(final Long id) {
         this.id = id;
     }
 

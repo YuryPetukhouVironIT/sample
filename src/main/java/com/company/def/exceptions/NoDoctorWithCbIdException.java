@@ -1,4 +1,4 @@
-package com.cephx.def.exceptions;
+package com.company.def.exceptions;
 
 public class NoDoctorWithCbIdException extends RuntimeException {
 

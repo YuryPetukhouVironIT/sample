@@ -1,6 +1,6 @@
-package com.cephx.def.repository;
+package com.company.def.repository;
 
-import com.cephx.def.model.chargebee.ChargeBeeEventInfo;
+import com.company.def.model.chargebee.ChargeBeeEventInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

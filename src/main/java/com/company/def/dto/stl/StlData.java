@@ -1,7 +1,7 @@
-package com.cephx.def.dto.stl;
+package com.company.def.dto.stl;
 
-import com.cephx.def.funcclass;
-import com.cephx.def.service.db.PatientService;
+import com.company.def.funcclass;
+import com.company.def.service.db.PatientService;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;

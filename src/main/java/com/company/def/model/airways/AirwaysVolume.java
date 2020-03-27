@@ -1,4 +1,4 @@
-package com.cephx.def.model.airways;
+package com.company.def.model.airways;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

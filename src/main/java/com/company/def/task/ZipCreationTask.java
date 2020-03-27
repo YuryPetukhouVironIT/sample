@@ -1,12 +1,12 @@
-package com.cephx.def.service;
+package com.company.def.task;
 
-import com.cephx.def.BasicPatientInfoData;
-import com.cephx.def.DBconnection;
-import com.cephx.def.dto.stl.StlJson;
-import com.cephx.def.dto.stl.StlJsonCreator;
-import com.cephx.def.funcclass;
-import com.cephx.def.intercom.IntercomClient;
-import com.cephx.def.service.db.PatientService;
+import com.company.def.BasicPatientInfoData;
+import com.company.def.DBconnection;
+import com.company.def.dto.stl.StlJson;
+import com.company.def.dto.stl.StlJsonCreator;
+import com.company.def.funcclass;
+import com.company.def.intercom.IntercomClient;
+import com.company.def.service.db.PatientService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -26,6 +26,9 @@ public class ZipCreationTask implements Runnable {
     private static final String INTERCOM_MESSAGE_BODY = "Processing completed for patient %1$s %2$s, please refresh the patients list and click the 'Actions' menu in the 3D column to access segmentation and reports";
     private static final String INTERCOM_HTML_MESSAGE_BODY = "Dear %1$s <br> Your segmented STL for patient %2$s %3$s is complete.  <br> Please login to your cephX account, select your patient and click the 'Actions' menu under the 3D column to download or view your STL images and movies. <br><br> Click here to go to your account: https://www.cephx.com <br><br> Thanks, <br> The cephX team";
     private static final String INTERCOM_EMAIL_SUBJECT = "Your segmented CBCT is ready";
+    private static final String ZIP_JSON_FILE_NAME = "zipinput.json";
+    private static final String ZIP_DESKTOP_FILE_NAME = "desktop.zip";
+    private static final String ZIP_MOBILE_FILE_NAME = "mobile.zip";
     private static final Logger logger = LogManager.getLogger(ZipCreationTask.class);
     private static final DBconnection dbConnection = DBconnection.GetDBconnection();
     private static final Object lockObject = new Object();
@@ -85,12 +88,12 @@ public class ZipCreationTask implements Runnable {
     }
 
     public void createStlZipJson(final long patientId, final String stl1S3Path, final boolean isCompany) throws Exception {
-        String mobileZipName = getZipNameIfPresent("mobile.zip", stl1S3Path);
-        String desktopZipName = getZipNameIfPresent("desktop.zip", stl1S3Path);
+        String mobileZipName = getZipNameIfPresent(ZIP_MOBILE_FILE_NAME, stl1S3Path);
+        String desktopZipName = getZipNameIfPresent(ZIP_DESKTOP_FILE_NAME, stl1S3Path);
         if (zipExceedsMaximumSize(stl1S3Path, desktopZipName)) {
             desktopZipName = mobileZipName;
         }
-        final String jsonFileName = "zipinput.json";
+        final String jsonFileName = ZIP_JSON_FILE_NAME;
         final String s3Key = stl1S3Path + "/" + jsonFileName;
         final String tempDir = funcclass.tempPatientImagesPath;
         final File directory = new File(tempDir + "/dicomDirJson" + patientId);
@@ -148,9 +151,9 @@ public class ZipCreationTask implements Runnable {
         final String tempDir = funcclass.tempPatientImagesPath;
         final File directory = new File(tempDir + "/dicomDir" + patientId);
         directory.mkdirs();
-        final java.util.List<String> stlPaths = new ArrayList<>();
+        final List<String> stlPaths = new ArrayList<>();
         stlPaths.add(stl1S3Path);
-        final java.util.List<File> patientStlFiles = downloadPatientFilesFromS3Directory(stlPaths, directory, extenstion);
+        final List<File> patientStlFiles = downloadPatientFilesFromS3Directory(stlPaths, directory, extenstion);
         File zipFile = null;
         if (!patientStlFiles.isEmpty()) {
             zipFile = zipFiles(patientStlFiles, patientZipName);

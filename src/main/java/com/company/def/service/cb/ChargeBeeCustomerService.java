@@ -1,6 +1,6 @@
-package com.cephx.def.service.cb;
+package com.company.def.service.cb;
 
-import com.cephx.def.dto.ChargeBeeRedirectDTO;
+import com.company.def.dto.ChargeBeeRedirectDTO;
 import com.chargebee.models.Customer;
 import com.chargebee.models.PortalSession;
 

@@ -1,8 +1,8 @@
-package com.cephx.def.service.db;
+package com.company.def.service.db;
 
-import com.cephx.def.DBconnection;
-import com.cephx.def.model.CriticalPoint;
-import com.cephx.def.repository.CriticalPointRepository;
+import com.company.def.DBconnection;
+import com.company.def.model.CriticalPoint;
+import com.company.def.repository.CriticalPointRepository;
 
 import java.util.HashMap;
 import java.util.List;

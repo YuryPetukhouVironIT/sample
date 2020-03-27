@@ -1,8 +1,8 @@
-package com.cephx.def.service.billing;
+package com.company.def.service.billing;
 
-import com.cephx.def.dto.BillingPlanFeatureDTO;
-import com.cephx.def.model.billing.BillingPlan;
-import com.cephx.def.model.billing.CbBillingPlan;
+import com.company.def.dto.BillingPlanFeatureDTO;
+import com.company.def.model.billing.BillingPlan;
+import com.company.def.model.billing.CbBillingPlan;
 
 import java.util.List;
 

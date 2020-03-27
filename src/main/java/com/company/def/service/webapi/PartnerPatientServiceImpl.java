@@ -1,16 +1,16 @@
-package com.cephx.def.service.webapi;
+package com.company.def.service.webapi;
 
-import com.cephx.def.BasicDoc;
-import com.cephx.def.Cdoctor;
-import com.cephx.def.DBconnection;
-import com.cephx.def.enums.BillingMethod;
-import com.cephx.def.exceptions.WebApiException;
-import com.cephx.def.funcclass;
-import com.cephx.def.service.AuthenticationService;
-import com.cephx.def.service.db.DoctorService;
-import com.cephx.def.service.db.PatientService;
-import com.cephx.def.servlets.admin.AdminService;
-import com.cephx.def.servlets.admin.Partner;
+import com.company.def.BasicDoc;
+import com.company.def.Cdoctor;
+import com.company.def.DBconnection;
+import com.company.def.enums.BillingMethod;
+import com.company.def.exceptions.WebApiException;
+import com.company.def.funcclass;
+import com.company.def.service.AuthenticationService;
+import com.company.def.service.db.DoctorService;
+import com.company.def.service.db.PatientService;
+import com.company.def.servlets.admin.AdminService;
+import com.company.def.servlets.admin.Partner;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpResponse;
@@ -39,17 +39,17 @@ import java.util.List;
 import java.util.UUID;
 import java.util.Vector;
 
-import static com.cephx.def.service.AccountService.ACTION_PARAMETER_NAME;
-import static com.cephx.def.service.AccountService.API_KEY_PARAMETER_NAME;
-import static com.cephx.def.service.AccountService.DOCTOR_ID_PARAMETER_NAME;
-import static com.cephx.def.service.AccountService.EMAIL_PARAMETER_NAME;
-import static com.cephx.def.service.AccountService.FIRST_NAME_PARAMETER_NAME;
-import static com.cephx.def.service.AccountService.IS_ORTO2_PARAMETER_NAME;
-import static com.cephx.def.service.AccountService.LAST_NAME_PARAMETER_NAME;
-import static com.cephx.def.service.AccountService.MASTER_ID_PARAMETER_NAME;
-import static com.cephx.def.service.AccountService.PASSWORD_PARAMETER_NAME;
-import static com.cephx.def.service.AccountService.PAYMENT_METHOD_PARAMETER_NAME;
-import static com.cephx.def.service.AccountService.USERTYPE_PARAMETER_NAME;
+import static com.company.def.service.AccountService.ACTION_PARAMETER_NAME;
+import static com.company.def.service.AccountService.API_KEY_PARAMETER_NAME;
+import static com.company.def.service.AccountService.DOCTOR_ID_PARAMETER_NAME;
+import static com.company.def.service.AccountService.EMAIL_PARAMETER_NAME;
+import static com.company.def.service.AccountService.FIRST_NAME_PARAMETER_NAME;
+import static com.company.def.service.AccountService.IS_ORTO2_PARAMETER_NAME;
+import static com.company.def.service.AccountService.LAST_NAME_PARAMETER_NAME;
+import static com.company.def.service.AccountService.MASTER_ID_PARAMETER_NAME;
+import static com.company.def.service.AccountService.PASSWORD_PARAMETER_NAME;
+import static com.company.def.service.AccountService.PAYMENT_METHOD_PARAMETER_NAME;
+import static com.company.def.service.AccountService.USERTYPE_PARAMETER_NAME;
 
 @Service
 public class PartnerPatientServiceImpl implements PartnerPatientService {

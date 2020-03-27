@@ -1,4 +1,4 @@
-package com.cephx.def.service.webapi;
+package com.company.def.service.webapi;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
